@@ -1,10 +1,11 @@
-import { experience, profile, projects, skills } from "./data";
+import { awards, education, experience, profile, projects, skills } from "./data";
 
 const nav = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
+  { href: "#awards", label: "Awards" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -158,6 +159,7 @@ export default function Home() {
                   <h3 className="font-semibold">
                     {job.role} <span className="text-muted font-normal">· {job.company}</span>
                   </h3>
+                  <p className="mt-1 text-sm text-muted">{job.location}</p>
                   <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-muted">
                     {job.points.map((point) => (
                       <li key={point}>{point}</li>
@@ -167,6 +169,31 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </Section>
+
+        <Section id="awards" title="Honors & Awards">
+          <div className="grid gap-6 sm:grid-cols-2">
+            {awards.map((award) => (
+              <article key={award.title} className="rounded-2xl border border-border bg-card p-6">
+                <p className="font-mono text-sm text-accent">{award.period}</p>
+                <h3 className="mt-2 text-lg font-semibold">{award.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{award.description}</p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
+        <Section id="education" title="Education">
+          {education.map((item) => (
+            <article key={item.institution} className="grid gap-2 sm:grid-cols-[10rem_1fr]">
+              <p className="font-mono text-sm text-muted">{item.period}</p>
+              <div>
+                <h3 className="font-semibold">{item.institution}</h3>
+                <p className="mt-1 text-sm text-muted">{item.degree}</p>
+                <p className="mt-1 text-sm text-muted">{item.location}</p>
+              </div>
+            </article>
+          ))}
         </Section>
 
         <Section id="contact" title="Contact">
@@ -180,6 +207,11 @@ export default function Home() {
           >
             {profile.email}
           </a>
+          <p className="mt-4 text-sm text-muted">
+            <a href={profile.phone.href} className="hover:text-foreground transition-colors">
+              {profile.phone.label}
+            </a>
+          </p>
           <ul className="mt-8 flex gap-6 text-sm">
             {profile.socials.map((social) => (
               <li key={social.label}>
