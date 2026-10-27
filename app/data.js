@@ -84,7 +84,7 @@ export const experience = [
     role: "Frontend Developer",
     company: "Aakash Educational Services Limited",
     period: "July 2022 — Present",
-    location: "Bengaluru",
+    location: "Remote / Hyderabad",
     points: [
       "Led a team of three developers across two TestPlayer repositories, owning feature delivery, production support and frontend optimisation.",
       "Built faculty exam-management workflows for OMR evaluation, scheduling, ranking and downloadable performance reports.",
