@@ -4,10 +4,10 @@ export const profile = {
   name: "Sayyad Mahammad",
   role: "Frontend Developer",
   tagline:
-    "I build responsive enterprise applications, interactive analytics dashboards and AI-assisted interfaces with React and Next.js.",
+    "I make complex workflows easier to use — from taking an exam to understanding what a student needs next.",
   about: [
-    "I'm a frontend developer at Aakash Educational Services with 4+ years of experience turning complex student, faculty and admin workflows into clear, useful interfaces.",
-    "I've led a team of three developers across two TestPlayer repositories, delivered features for myAakash, and built Falcon's faculty analytics and contextual AI chat interfaces. My work spans reusable components, rendering performance, API integration and automated testing.",
+    "I'm Sayyad, a frontend developer working remotely from Hyderabad. Since joining Aakash in July 2022, I've worked on the experiences students use to learn and take exams, and the tools faculty use behind the scenes.",
+    "I enjoy the parts of frontend work where a small decision makes a real difference: a document that stays usable on a low-end phone, a chart that makes a weak topic obvious, or an automated check that saves another round of manual testing. React and Next.js are my main tools; leading three developers on TestPlayer has also given me experience taking work from planning through production support.",
   ],
   email: "sydmd99@gmail.com",
   phone: { label: "+91 7090962847", href: "tel:+917090962847" },
@@ -30,49 +30,55 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Falcon — Faculty Analytics & AI Chat",
+    title: "Falcon — Making student performance easier to explore",
     description:
-      "Built faculty-facing dashboards that reveal students' strengths and areas for improvement. Responsive Recharts visualisations show chapter-wise accuracy and question-type performance, while an AI chat interface uses relevant profile data to answer questions about an individual student or batch. Runner-up at the Aakash Innovation Hackathon 2026.",
+      "A faculty member should be able to see where a student needs help and ask follow-up questions without losing context. For Falcon, I built charts for chapter and question-type performance, plus an AI chat interface that lets faculty explore an individual student or a whole batch using the relevant profile data.",
+    outcome: "Runner-up at the Aakash Innovation Hackathon 2026.",
     tags: ["Next.js", "React", "Recharts", "TanStack Query", "Tailwind CSS", "AI chat"],
     link: "",
     source: "",
   },
   {
-    title: "TestPlayer — Scholarship Exam Platform",
+    title: "TestPlayer — Both sides of an exam",
     description:
-      "Led three developers across the faculty exam-management and student online test-taking repositories. TestPlayer conducts ANTHE, one of Aakash's major scholarship exams. Automated OMR workflows reduced faculty effort by 50–60%, while ZEN consolidated exam preparation workflows and reduced effort by approximately 80%.",
+      "Students see an online exam; faculty also need to prepare it, process OMR uploads and publish results. I led three developers across these two sides of TestPlayer, which hosts ANTHE. Our faculty tools brought scheduling, evaluation and reporting into clearer workflows, including ZEN for exam preparation.",
+    outcome: "OMR workflows reduced faculty effort by 50–60%; ZEN reduced exam-preparation effort by approximately 80%.",
     tags: ["React", "Next.js", "Redux", "TanStack Query", "AWS S3"],
     link: "",
     source: "",
   },
   {
-    title: "TestPlayer — Deployment Test Automation",
+    title: "TestPlayer — Taking repetition out of release checks",
     description:
-      "Built a Cypress framework covering approximately 84% of test cases, replacing repeated manual checks for covered workflows at each deployment and reducing QA sanity effort by 50–60%. Integrated Jenkins, cross-browser LambdaTest runs and reports published to AWS S3.",
+      "Every deployment used to mean another round of manual checks. I built a Cypress framework to run those repeatable checks through Jenkins, across Chrome and Firefox. Reports and failure screenshots go to S3 so the team can see what failed and investigate it.",
+    outcome: "Approximately 84% of test cases automated, with QA sanity effort reduced by 50–60%.",
     tags: ["Cypress", "Jenkins", "LambdaTest", "AWS S3", "Redis"],
     link: "",
     source: "",
   },
   {
-    title: "myAakash — Student Platform",
+    title: "myAakash — The details that make learning smoother",
     description:
-      "Delivered performance-insight screens, learning resources and an AI Hints panel across web and mobile webviews. Reworked the PDF viewer for low-end devices, led the Next.js 13-to-15 upgrade, and standardised analytics instrumentation with a custom ESLint plugin.",
+      "Learning resources need to work well on the device a student actually has. Alongside notes, performance insights and AI hints, I worked on making PDF zooming and rendering more usable on low-end phones. Behind the interface, I led a Next.js upgrade and wrote an ESLint plugin to keep analytics events consistent.",
+    outcome: "Delivered across the web application and in-app mobile webviews.",
     tags: ["Next.js", "Redux Toolkit", "TanStack Query", "Tailwind CSS", "pdf.js"],
     link: "",
     source: "",
   },
   {
-    title: "Aakash React Components",
+    title: "Aakash React Components — Shared building blocks",
     description:
-      "Contributed reusable components to a shared design system consumed by multiple frontend applications, supporting consistent styling and maintainable interfaces with React, TypeScript, Storybook and Rollup.",
+      "When several apps need the same UI, fixing it in one place is better than maintaining separate versions. I contributed to a shared React component library, with TypeScript for its interfaces, Storybook for component examples and Rollup for packaging.",
+    outcome: "Shared components used across multiple frontend applications.",
     tags: ["React", "TypeScript", "Storybook", "Rollup"],
     link: "",
     source: "",
   },
   {
-    title: "Personal Portfolio",
+    title: "This portfolio — A place to share my work",
     description:
-      "A responsive portfolio presenting my frontend engineering work, projects and experience, built with Next.js and Tailwind CSS.",
+      "I wanted a place to explain the work behind the bullet points. This site brings together the products I've worked on, the problems I enjoy solving and a few ways to get in touch. It's built with Next.js and Tailwind CSS.",
+    outcome: "A responsive home for my projects, experience and contact details.",
     tags: ["Next.js", "React", "Tailwind CSS"],
     link: "https://sayyadmd.vercel.app/",
     source: "",
@@ -86,11 +92,11 @@ export const experience = [
     period: "July 2022 — Present",
     location: "Remote / Hyderabad",
     points: [
-      "Led a team of three developers across two TestPlayer repositories, owning feature delivery, production support and frontend optimisation.",
-      "Built faculty exam-management workflows for OMR evaluation, scheduling, ranking and downloadable performance reports.",
-      "Developed myAakash features, improved document rendering, and led the Next.js upgrade and Redux Toolkit migration.",
-      "Built Falcon's interactive analytics dashboards and contextual AI chat for student- and batch-level insights.",
-      "Automated approximately 84% of test cases with Cypress and integrated cross-browser testing into Jenkins CI/CD.",
+      "My responsibilities grew from delivering frontend features to leading three developers across TestPlayer's faculty and student applications, including supporting those features in production.",
+      "Working with faculty workflows taught me to think beyond individual screens: an upload also needs progress, failure handling, correction and a useful result at the end.",
+      "On myAakash, I've balanced new student features with the work that keeps an application maintainable — upgrades, state-management changes, shared components and rendering improvements.",
+      "Falcon gave me a chance to connect data visualisation with conversational AI, helping faculty explore performance through both charts and questions.",
+      "Across these projects, I work with product, UX, backend and data colleagues to turn requirements into interfaces, review code and follow through on releases.",
     ],
   },
 ];
@@ -99,12 +105,12 @@ export const awards = [
   {
     title: "Runner-up — Aakash Innovation Hackathon",
     period: "2026",
-    description: "For building Falcon, an AI-powered faculty analytics platform with student insights and contextual AI chat.",
+    description: "Falcon earned runner-up recognition for helping faculty explore student performance through analytics and contextual AI chat.",
   },
   {
     title: "Engineering Hero Award",
     period: "Q3 2024",
-    description: "For delivering high-impact myAakash product features.",
+    description: "Recognition for my contributions to high-impact features on myAakash.",
   },
 ];
 

@@ -115,7 +115,11 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section id="projects" title="Projects">
+        <Section id="projects" title="Selected work">
+          <p className="mb-8 max-w-2xl text-lg leading-relaxed text-muted">
+            A closer look at the problems, decisions and teamwork behind my work at Aakash,
+            alongside this portfolio.
+          </p>
           <div className="grid gap-6 sm:grid-cols-2">
             {projects.map((project) => (
               <article
@@ -125,6 +129,9 @@ export default function Home() {
                 <h3 className="text-lg font-semibold">{project.title}</h3>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
                   {project.description}
+                </p>
+                <p className="mt-4 border-l-2 border-accent pl-3 text-sm leading-relaxed text-foreground">
+                  {project.outcome}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
@@ -199,7 +206,7 @@ export default function Home() {
         <Section id="contact" title="Contact">
           <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">Let&apos;s work together.</h3>
           <p className="mt-4 max-w-xl text-lg text-muted">
-            I&apos;m open to new opportunities and collaborations. Drop me a message and I&apos;ll get back to you.
+            Have a frontend problem to solve, an interesting product to build, or a role you think would fit? I&apos;d be happy to hear about it.
           </p>
           <a
             href={`mailto:${profile.email}`}
